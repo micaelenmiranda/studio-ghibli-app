@@ -1,5 +1,5 @@
 import { Header, Title } from './style'
-import logo from '../../images/studio-ghibli-logo.png'
+import logo from '../../assets/images/studio-ghibli-logo.png'
 
 export default function createHeader() {
   return(

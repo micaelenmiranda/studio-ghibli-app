@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import wallpaper from '../../images/ghibli-forest.jpg';
+import wallpaper from '../../assets/images/ghibli-forest.jpg';
 
-const Header = styled.div`
+const Header = styled.header`
   background-blend-mode: multiply;
   background-color: rgba(0, 0, 0, 0.4);
   background-image: url(${wallpaper});
@@ -18,6 +18,7 @@ const Title = styled.h1`
 
   img {
     max-width: 200px;
+    width: 100%;
   }
 `
 
