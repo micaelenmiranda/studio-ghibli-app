@@ -1,4 +1,5 @@
-import { Component } from 'react'
+import { Component } from 'react';
+import { Link } from "react-router-dom";
 
 import Header from './../../components/Header/Header'
 import { Card, Wrapper } from './styles'
@@ -41,6 +42,10 @@ class Home extends Component {
           )
         )}
         </Wrapper>
+   
+          <Link to="/single">
+            <div>Ir para a página Sobre</div>
+          </Link>
       </>
     )
   }
