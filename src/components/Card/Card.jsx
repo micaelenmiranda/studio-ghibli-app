@@ -1,14 +1,25 @@
-import { CardMovie } from './styles';
+import { Link } from 'react-router-dom';
+
+import { 
+  CardMovie,
+  CardImage,
+  CardTitle,
+  CardSubTitle
+ } from './styles';
 
 const Card = props => (
   <>
     {props.movies.map(( item ) => {
       return(
-        <CardMovie key={item.id}>
-          <img src={item.image} alt={item.title}/>
-          <h2>{item.title}</h2>
-          <h3>{item.original_title}</h3>
-      </CardMovie>
+        <Link key={item.id} to={{ pathname: `/movie/${item.original_title}`,
+          state: { item: item.id }
+        }}>
+          <CardMovie>
+            <CardImage src={item.image} alt={item.title}/>
+            <CardTitle>{item.title}</CardTitle>
+            <CardSubTitle>{item.original_title}</CardSubTitle>
+          </CardMovie>
+        </Link>
       )
     })}
   </>

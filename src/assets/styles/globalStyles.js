@@ -14,6 +14,10 @@ const GlobalStyles = createGlobalStyle`
     background-color: #121212;
     font-family: 'Montserrat', sans-serif;
   }
+
+  a {
+    text-decoration: none;
+  }
 `
 
 export default GlobalStyles

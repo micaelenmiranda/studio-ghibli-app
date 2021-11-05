@@ -28,7 +28,7 @@ class Home extends Component {
       <>
         <Header />
         <Wrapper> 
-          <Card movies={this.state.movies} />
+          <Card movies={ this.state.movies } />
         </Wrapper>
       </>
     )
